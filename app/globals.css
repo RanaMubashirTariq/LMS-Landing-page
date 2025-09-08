@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'plus-jakarta-display';
+}
+
+
+
+
+@font-face{
+  font-family: 'PlusJakartaSans';
+  src: url('./fonts/static/PlusJakartaSans-Bold.ttf') format('opentype');
+  font-size: 700;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'PlusJakartaSans';
+  src: url('./fonts/static/PlusJakartaSans-SemiBold.ttf') format('opentype');
+  font-size: 600;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'PlusJakartaSans';
+  src: url('./fonts/static/PlusJakartaSans-Medium.ttf') format('opentype');
+  font-size: 500;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'PlusJakartaSans';
+  src: url('./fonts/static/PlusJakartaSans-Regular.ttf') format('opentype');
+  font-size: 400;
+  font-style: normal;
+}
+.font-Plus_Jakarta_Sans{
+  font-family: 'PlusJakartaSans';
+}
+
+/* Marquee helpers */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee__track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: marquee-left 30s linear infinite;
+}
+
+/* Pause marquee on hover (hovering any card inside also pauses due to ancestor hover) */
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+
+/* Also pause if the moving track itself is hovered */
+.marquee__track:hover {
+  animation-play-state: paused;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
