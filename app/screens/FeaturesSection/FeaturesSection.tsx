@@ -168,9 +168,9 @@ export default function FeaturesSection  () {
       </div>
 
       <div className="gap-5 self-stretch w-full flex-[0_0_auto] flex items-start relative max-[1100px]:flex-wrap max-[1100px]:justify-center">
-        <Card className="flex-col w-[387px] max-[800px]:w-[100%] gap-8 p-6 bg-white rounded-3xl border border-solid border-[#e7e7e7] flex items-start relative">
+        <Card className="flex-col w-[387px] max-[900px]:w-[100%] gap-8 p-6 bg-white rounded-3xl border border-solid border-[#e7e7e7] flex items-start relative">
           <CardContent className="p-0 w-full">
-            <div className="w-[327.08px] max-[800px]:w-[100%]  items-start gap-[13.15px] flex-[0_0_auto] rounded-lg overflow-hidden overflow-x-scroll flex relative">
+            <div className="w-[327.08px] max-[900px]:w-[100%] items-start gap-[13.15px] flex-[0_0_auto] rounded-lg overflow-hidden overflow-x-auto scrollbar-hide flex relative">
               <div className="w-[242.44px] gap-[6.57px] rounded-[9.86px] border-[0.82px] border-solid flex flex-col items-end relative border-[#d1d1d1]">
                 <div className="flex flex-col items-center gap-[13.15px] p-[13.15px] relative self-stretch w-full flex-[0_0_auto] border-b-[0.82px] [border-bottom-style:solid] border-[#d1d1d1]">
                   <div className="flex flex-col items-start gap-[13.15px] relative self-stretch w-full flex-[0_0_auto]">
@@ -307,8 +307,8 @@ export default function FeaturesSection  () {
           </CardContent>
         </Card>
 
-        <Card className="w-[386px] max-[800px]:w-[100%] gap-6 flex flex-col h-[497px] items-start p-6 relative bg-white rounded-3xl border border-solid border-[#e7e7e7]">
-          <CardContent className="p-0 w-full h-full flex flex-col">
+        <Card className="w-[386px] max-[900px]:w-[100%] gap-6 flex flex-col h-[497px] items-start p-6 relative bg-white rounded-3xl border border-solid border-[#e7e7e7]">
+          <CardContent className="p-0 w-full h-full flex flex-col ">
             <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
               <h3 className="relative   font-semibold  text-black text-[32px] max-[767px]:text-[24px]  tracking-[-0.2px] leading-[120%] font-Plus_Jakarta_Sans">
                 Smart Calendar
@@ -321,8 +321,8 @@ export default function FeaturesSection  () {
               </p>
             </div>
 
-            <div className="relative self-stretch w-full h-[278px] overflow-hidden mt-6">
-              <div className="flex w-[338px] items-center justify-between relative top-[-74px]">
+            <div className="relative self-stretch w-full max-[500px]:w-[100%] overflow-hidden overflow-x-auto scrollbar-hide h-[278px] overflow-hidden mt-6">
+              <div className="flex w-[338px]  items-center justify-between relative top-[-74px]">
                 <div className="relative w-[50.85px] h-[463.37px]">
                   {timeSlots.map((slot, index) => (
                     <div
@@ -429,7 +429,7 @@ export default function FeaturesSection  () {
           </CardContent>
         </Card>
 
-        <Card className="w-[387px] max-[800px]:w-[100%] gap-8 flex flex-col h-[497px] items-start p-6 relative bg-white rounded-3xl border border-solid border-[#e7e7e7]">
+        <Card className="w-[387px] max-[900px]:w-[100%] gap-8 flex flex-col h-[497px] items-start p-6 relative bg-white rounded-3xl border border-solid border-[#e7e7e7]">
           <CardContent className="p-0 w-full h-full flex flex-col gap-8">
             <div className="flex-col h-[307.93px] items-center justify-around gap-[132.02px] self-stretch w-full flex relative">
               <div className="flex-col h-[307.93px] items-center justify-between self-stretch w-full flex relative">

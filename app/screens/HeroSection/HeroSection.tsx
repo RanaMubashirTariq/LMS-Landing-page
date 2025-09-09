@@ -56,9 +56,9 @@ const statsData = [
 export default function HeroSection  ()  {
   return (
     <section className="w-full bg-[#f4ffe6] overflow-hidden">
-      <div className="max-w-[1200px] mx-auto  pt-[123px] max-[1100px]:pt-[100px] max-[1000px]:pt-10  max-[1022px]:pb-[30px] relative">
+      <div className="max-w-[1200px] mx-auto  pt-[200px] max-[1100px]:pt-[100px] max-[1000px]:pt-10  max-[1022px]:pb-[30px] relative">
 
-      <div className="flex-1 flex flex-col items-center absolute top-[124px] max-[1000px]:top-[140px] max-[1300px]:ml-[100px] max-[1100px]:ml-0 ">
+      <div className="flex-1 flex flex-col items-center absolute top-[224px] max-[1100px]:top-[160px] max-[1000px]:top-[140px] max-[1300px]:ml-[100px] max-[1100px]:ml-0 ">
             <h1 className="w-full max-w-[1200px] font-bold  text-black text-[128px] max-[1300px]:text-[100px] max-[767px]:px-[25px] max-[1000px]:text-[80px] max-[800px]:text-[60px] max-[767px]:text-[40px] max-[500px]:text-[34px] max-[1000px]:px-[50px] max-[1300px]:max-w-[1000px] text-center tracking-[0] leading-[100%] font-Plus_Jakarta_Sans ">
               Boost Your Productivity. Simplify Your Day.
             </h1>
