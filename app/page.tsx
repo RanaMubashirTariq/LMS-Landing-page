@@ -20,13 +20,15 @@ export default function Home() {
            <div id="features">
            <FeaturesSection/>
            </div>
-           <div id="about">
+           <div id="blog">
            <TestimonialsSection/>
            </div>
            <div id="download">
            <CallToActionSection/>
            </div>
+           <div className="support">
            <FooterSection/>
+           </div>
     </div>
   );
 }

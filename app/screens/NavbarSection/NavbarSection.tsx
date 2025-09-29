@@ -14,8 +14,8 @@ export default function NavbarSection() {
     { label: "Features", href: "#features" },
     { label: "About Us", href: "#about" },
     { label: "Download", href: "#download" },
-    { label: "Blog", href: "/blog" },
-    { label: "Support", href: "/support" },
+    { label: "Blog", href: "#blog" },
+    { label: "Support", href: "#support" },
   ];
 
   useEffect(() => {

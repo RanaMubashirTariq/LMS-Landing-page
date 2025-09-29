@@ -31,7 +31,7 @@ export default function FooterSection  ()  {
   ];
 
   return (
-    <footer className="flex flex-col w-full items-center gap-10 pt-[100px] pb-0 px-[120px] relative bg-transparent max-[1300px]:px-[80px] max-[1100px]:px-[50px] max-[767px]:px-[25px] max-[1300px]:pt-[80px]">
+    <footer className="flex flex-col w-full items-center gap-10 pt-[100px] pb-0 px-[120px] relative bg-transparent max-[1300px]:px-[80px] max-[1100px]:px-[50px] max-[767px]:px-[25px] max-[1300px]:pt-[80px] bg-white">
       <div className="flex items-start justify-between max-[1050px]:flex-wrap gap-5 relative w-full">
         <div className="inline-flex flex-col items-start gap-2 relative flex-[0_0_auto]">
           <div className="relative w-[307px] max-[767px]:w-[200px]  font-semibold  text-[#050912] text-[48px] max-[767px]:text-[32px] max-[500px]:text-[28px] tracking-[-0.2px] leading-[120%] font-Plus_Jakarta_Sans">
