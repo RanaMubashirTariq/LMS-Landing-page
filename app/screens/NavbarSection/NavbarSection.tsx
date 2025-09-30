@@ -94,7 +94,7 @@ export default function NavbarSection() {
         <div className="fixed right-0 top-0 z-50 min-[1024px]:hidden h-[100vh] w-[300px] ">
           <div className="absolute inset-0 bg-opacity-50" onClick={() => setIsMenuOpen(false)}></div>
           <div className="absolute top-[80px] right-0  w-[200px] h-[100vh] bg-[#f4ffe6] p-6 shadow-lg">
-            <div className="flex flex-col gap-6 mt-16">
+            <div className="flex flex-col gap-6 mt-6">
               {navigationItems.map((item, index) => (
                 <Link
                   key={index}
