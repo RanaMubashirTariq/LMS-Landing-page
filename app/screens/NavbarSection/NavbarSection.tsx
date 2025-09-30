@@ -89,35 +89,45 @@ export default function NavbarSection() {
         <span className={`w-6 h-0.5 bg-black transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
       </button>
 
-      {/* Mobile Menu Overlay */}
-      {isMenuOpen && (
-        <div className="fixed right-0 top-0 z-50 min-[1024px]:hidden h-[100vh] w-[300px] ">
-          <div className="absolute inset-0 bg-opacity-50" onClick={() => setIsMenuOpen(false)}></div>
-          <div className="absolute top-[80px] right-0  w-[200px] h-[100vh] bg-[#f4ffe6] p-6 shadow-lg">
-            <div className="flex flex-col gap-6 mt-6">
-              {navigationItems.map((item, index) => (
-                <Link
-                  key={index}
-                  href={item.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={
-                    isActiveLink(item.href)
-                      ? "font-Plus_Jakarta_Sans font-semibold text-black text-sm tracking-[0] leading-[normal]"
-                      : "font-Plus_Jakarta_Sans font-regular text-[#6d6d6d] text-sm tracking-[0] leading-[normal] hover:text-black transition-colors"
-                  }
-                >
-                  {item.label}
-                </Link>
-              ))}
-              <Button className="cursor-pointer w-full h-[52px] px-6 py-4 bg-black text-white rounded-[100px] border border-solid hover:bg-gray-800 mt-4">
-                <span className="font-Plus_Jakarta_Sans font-semibold text-sm tracking-[0] leading-[100%] text-white">
-                  Sign-up
-                </span>
-              </Button>
-            </div>
-          </div>
+      {/* Mobile Menu: Backdrop + Slide-in Panel */}
+      {/* Backdrop */}
+      <div
+        onClick={() => setIsMenuOpen(false)}
+        className={`min-[1024px]:hidden fixed inset-0 bg-black/40 z-40 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+      />
+      {/* Panel */}
+      <div
+        className={`min-[1024px]:hidden fixed top-0 right-0 w-[240px] h-full bg-[#f4ffe6] p-6 shadow-lg z-50 transform transition-transform duration-300 ease-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+      >
+        <button
+          aria-label="Close menu"
+          className="absolute top-5 right-5 text-2xl leading-none"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          ✕
+        </button>
+        <div className="pt-[80px] flex flex-col gap-6">
+          {navigationItems.map((item, index) => (
+            <Link
+              key={index}
+              href={item.href}
+              onClick={() => setIsMenuOpen(false)}
+              className={
+                isActiveLink(item.href)
+                  ? "font-Plus_Jakarta_Sans font-semibold text-black text-sm tracking-[0] leading-[normal]"
+                  : "font-Plus_Jakarta_Sans font-regular text-[#6d6d6d] text-sm tracking-[0] leading-[normal] hover:text-black transition-colors"
+              }
+            >
+              {item.label}
+            </Link>
+          ))}
+          <Button className="cursor-pointer w-full h-[52px] px-6 py-4 bg-black text-white rounded-[100px] border border-solid hover:bg-gray-800 mt-2">
+            <span className="font-Plus_Jakarta_Sans font-semibold text-sm tracking-[0] leading-[100%] text-white">
+              Sign-up
+            </span>
+          </Button>
         </div>
-      )}
+      </div>
     </nav>
   );
 }
