@@ -115,7 +115,7 @@ export default function TestimonialsSection  () {
   );
 	return (
 		<section className="w-full items-center gap-[72px] max-[767px]:gap-10  py-20 max-[1000px]:py-10 flex flex-col relative">
-			<h2 className="max-w-[715px] max-[1000px]:max-w-[500px] font-Plus_Jakarta_Sans font-semibold text-black text-5xl max-[1000px]:text-[36px] max-[767px]:text-[28px] max-[767px]:px-[25px] text-center tracking-[0] leading-[normal] ">
+			<h2 className="max-w-[715px] max-[1000px]:max-w-[500px] font-Plus_Jakarta_Sans font-semibold text-black text-[56px] max-[1500px]:text-5xl max-[1000px]:text-[36px] max-[767px]:text-[28px] max-[767px]:px-[25px] text-center tracking-[0] leading-[normal] ">
 				Word of praise from others about our presence.
 			</h2>
 

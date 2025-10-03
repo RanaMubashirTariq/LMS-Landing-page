@@ -11,14 +11,14 @@ export default function CallToActionSection  ()  {
               Start Your Productive Journey
             </h2>
 
-            <p className="relative w-[606px] max-[800px]:w-[550px]   max-[767px]:w-[100%] font-regular font-Plus_Jakarta_Sans text-[#050912] text-sm text-center tracking-[-0.2px] leading-[180%] max-[767]:leading-[150%]">
+            <p className="relative w-[606px] max-[800px]:w-[550px]   max-[767px]:w-[100%] font-regular font-Plus_Jakarta_Sans text-[#050912] text-base max-[1500px]:text-sm text-center tracking-[-0.2px] leading-[180%] max-[767]:leading-[150%]">
               &quot;Prodify has changed the way I work! The focus mode and
               reminders have boosted my productivity significantly.&quot;
             </p>
           </div>
 
           <Button className="cursor-pointer flex w-[185px] max-[767px]:w-[150px] max-[767px]:h-[45px] items-center justify-center gap-2.5 px-8 py-[18px] max-[767px]:px-3 max-[767px]:py-4 relative bg-[#050912] rounded-[31px] h-auto hover:bg-[#050912]/90">
-            <span className="relative  font-bold  text-white text-[16px] max-[767px]:text-[14px] max-[500px]:text-[12px] text-center tracking-[-0.2px] leading-[24px] whitespace-nowrap font-Plus_Jakarta_Sans">
+            <span className="relative  font-bold  text-white text-lg max-[1500px]:text-base max-[767px]:text-[14px] max-[500px]:text-[12px] text-center tracking-[-0.2px] leading-[24px] whitespace-nowrap font-Plus_Jakarta_Sans">
               Download now
             </span>
           </Button>

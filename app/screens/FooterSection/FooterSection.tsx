@@ -48,7 +48,7 @@ export default function FooterSection  ()  {
             <Link
               key={`menu-${index}`}
               href={item.href}
-              className="relative font-regular text-[#888888] text-base max-[767px]:text-sm tracking-[-0.2px] leading-[120%] whitespace-nowrap font-Plus_Jakarta_Sans hover:text-[#050912] transition-colors"
+              className="relative font-regular text-[#888888] text-lg max-[1500px]:text-base max-[767px]:text-sm tracking-[-0.2px] leading-[120%] whitespace-nowrap font-Plus_Jakarta_Sans hover:text-[#050912] transition-colors"
             >
               {item.label}
             </Link>
@@ -63,7 +63,7 @@ export default function FooterSection  ()  {
           {supportItems.map((item, index) => (
             <div
               key={`support-${index}`}
-              className="relative font-regular  text-[#888888] text-base max-[767px]:text-sm tracking-[-0.2px] leading-[120%] whitespace-nowrap font-Plus_Jakarta_Sans cursor-pointer hover:text-[#050912] transition-colors"
+              className="relative font-regular  text-[#888888] text-lg max-[1500px]:text-base max-[767px]:text-sm tracking-[-0.2px] leading-[120%] whitespace-nowrap font-Plus_Jakarta_Sans cursor-pointer hover:text-[#050912] transition-colors"
             >
               {item}
             </div>
@@ -78,7 +78,7 @@ export default function FooterSection  ()  {
           {legalItems.map((item, index) => (
             <div
               key={`legal-${index}`}
-              className="relative font-regular  text-[#888888] text-base max-[767px]:text-sm  tracking-[-0.2px] leading-[120%] whitespace-nowrap font-Plus_Jakarta_Sans cursor-pointer hover:text-[#050912] transition-colors"
+              className="relative font-regular  text-[#888888] text-lg max-[1500px]:text-base max-[767px]:text-sm  tracking-[-0.2px] leading-[120%] whitespace-nowrap font-Plus_Jakarta_Sans cursor-pointer hover:text-[#050912] transition-colors"
             >
               {item}
             </div>
@@ -87,15 +87,15 @@ export default function FooterSection  ()  {
 
         <div className="w-[273px] gap-6 max-[767px]:gap-4 flex flex-col items-start relative">
           <div className="gap-4 w-full flex-[0_0_auto] flex flex-col items-start relative">
-            <div className="relative w-full font-regular  text-[#888888] text-base max-[767px]:text-sm  tracking-[-0.2px] leading-[120%]  font-Plus_Jakarta_Sans ">
+            <div className="relative w-full font-regular  text-[#888888] text-lg max-[1500px]:text-base max-[767px]:text-sm  tracking-[-0.2px] leading-[120%]  font-Plus_Jakarta_Sans ">
               2118 Thornridge Cir. Syracuse, Connecticut 35624
             </div>
 
-            <div className="relative w-full font-regular  text-[#888888] text-base max-[767px]:text-sm  tracking-[-0.2px] leading-[120%]  font-Plus_Jakarta_Sans ">
+            <div className="relative w-full font-regular  text-[#888888] text-lg max-[1500px]:text-base max-[767px]:text-sm  tracking-[-0.2px] leading-[120%]  font-Plus_Jakarta_Sans ">
               Hello@Prodify.com
             </div>
 
-            <div className="relative w-full font-regular  text-[#888888] text-base max-[767px]:text-sm  tracking-[-0.2px] leading-[120%] font-Plus_Jakarta_Sans ">
+            <div className="relative w-full font-regular  text-[#888888] text-lg max-[1500px]:text-base max-[767px]:text-sm  tracking-[-0.2px] leading-[120%] font-Plus_Jakarta_Sans ">
               (208) 555-0112
             </div>
           </div>

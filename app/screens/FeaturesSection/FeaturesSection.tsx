@@ -126,25 +126,25 @@ const focusTasks = [
   },
 ];
 
-export default function FeaturesSection  () {
+export default function FeaturesSection() {
   return (
     <section className="flex flex-col w-full items-center justify-center gap-5 px-[120px] max-[1300px]:px-20 max-[1100px]:px-[50px] max-[767px]:px-[25px] py-20 max-[1000px]:py-10 relative">
-      <div className="flex items-center gap-5 max-[767px]:flex-col relative self-stretch w-full flex-[0_0_auto]">
-        <Card className="flex flex-col w-[590px] max-[767px]:w-[100%] h-[556px] max-[1000px]:h-[450px] max-[767px]:h-[250px] max-[500px]:h-[300px] max-[350px]:h-[330px]   items-start justify-between p-12 relative bg-[#f4ffe6] rounded-3xl border-0 max-[1300px]:p-8 max-[800px]:p-5">
+      <div className="flex items-center min-[1500px]:justify-center min-[1500px]:gap-15 gap-5 max-[767px]:flex-col relative self-stretch w-full flex-[0_0_auto]">
+        <Card className="flex flex-col min-[1500px]:w-[650px] w-[590px] max-[767px]:w-[100%] h-[556px] max-[1000px]:h-[450px] max-[767px]:h-[250px] max-[500px]:h-[300px] max-[350px]:h-[330px]   items-start justify-between p-12 relative bg-[#f4ffe6] rounded-3xl border-0 max-[1300px]:p-8 max-[800px]:p-5">
           <CardContent className="p-0 flex flex-col h-full justify-between w-full">
-            <h2 className="relative  font-semibold  text-black text-[48px] max-[1100px]:text-[44px] max-[1000px]:text-[36px] max-[767px]:text-[28px] tracking-[-0.2px] leading-[120%] font-Plus_Jakarta_Sans">
+            <h2 className="relative  font-semibold  text-black text-[56px] max-[1500px]:text-[48px] max-[1100px]:text-[44px] max-[1000px]:text-[36px] max-[767px]:text-[28px] tracking-[-0.2px] leading-[120%] font-Plus_Jakarta_Sans">
               All-in-One Productivity Solution
             </h2>
 
             <div className="flex flex-col items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-              <p className="relative  font-regular  text-black text-[14px] tracking-[-0.2px] leading-[180%] font-Plus_Jakarta_Sans">
+              <p className="relative  font-regular  text-black text-lg max-[1500px]:text-base tracking-[-0.2px] leading-[180%] font-Plus_Jakarta_Sans">
                 From task management to reminders, calendar integration to focus
                 mode, Prodify gives you the tools to boost your productivity and
                 take control of your time.
               </p>
 
               <Button className="cursor-pointer flex w-[185px] max-[767px]:w-[150px] max-[767px]:h-[45px] items-center justify-center gap-2.5 px-8 py-[18px] relative flex-[0_0_auto] bg-[#050912] rounded-[31px] h-auto hover:bg-[#050912]/90">
-                <span className="relative  font-bold  text-white text-base max-[767px]:text-sm text-center tracking-[-0.2px] leading-[24px] whitespace-nowrap font-Plus_Jakarta_Sans">
+                <span className="relative  font-bold  text-white text-lg max-[1500px]:text-base max-[767px]:text-sm text-center tracking-[-0.2px] leading-[24px] whitespace-nowrap font-Plus_Jakarta_Sans">
                   Download Now
                 </span>
               </Button>
@@ -152,7 +152,7 @@ export default function FeaturesSection  () {
           </CardContent>
         </Card>
 
-        <Card className="flex flex-col w-[590px] max-[767px]:w-[100%] h-[556px] max-[1000px]:h-[450px] max-[767px]:h-[350px] items-center justify-between p-12 max-[1300px]:p-8 max-[800px]:p-5 relative bg-white rounded-3xl border border-solid border-[#e7e7e7]">
+        <Card className="flex flex-col min-[1500px]:w-[650px] w-[590px] max-[767px]:w-[100%] h-[556px] max-[1000px]:h-[450px] max-[767px]:h-[350px] items-center justify-between p-12 max-[1300px]:p-8 max-[800px]:p-5 relative bg-white rounded-3xl border border-solid border-[#e7e7e7]">
           <CardContent className="p-0 flex flex-col h-full justify-between items-center w-full">
             <img
               className="relative w-[355.11px] h-[304.23px] max-[1000px]:w-[300px] max-[1000px]:h-[250px] max-[767px]:h-[200px] max-[767px]:w-[250px]"
@@ -160,26 +160,26 @@ export default function FeaturesSection  () {
               src="/illustration.png"
             />
 
-            <h3 className="relative  font-semibold  text-black text-[48px] max-[1100px]:text-[44px] max-[1000px]:text-[36px] max-[767px]:text-[28px]  tracking-[-0.2px] leading-[120%] font-Plus_Jakarta_Sans">
+            <h3 className="relative  font-semibold  text-black text-[56px] max-[1500px]:text-[48px] max-[1100px]:text-[44px] max-[1000px]:text-[36px] max-[767px]:text-[28px]  tracking-[-0.2px] leading-[120%] font-Plus_Jakarta_Sans">
               Do more and stay productive
             </h3>
           </CardContent>
         </Card>
       </div>
 
-      <div className="gap-5 self-stretch w-full flex-[0_0_auto] flex items-start relative max-[1100px]:flex-wrap max-[1100px]:justify-center">
-        <Card className="flex-col w-[387px] max-[900px]:w-[100%] gap-8 p-6 bg-white rounded-3xl border border-solid border-[#e7e7e7] flex items-start relative">
+      <div className="gap-5 self-stretch w-full flex-[0_0_auto] flex items-start min-[1500px]:justify-center relative max-[1100px]:flex-wrap max-[1100px]:justify-center">
+        <Card className="flex-col min-[1500px]:w-[500px] w-[387px] max-[900px]:w-[100%] gap-8 p-6 bg-white rounded-3xl border border-solid border-[#e7e7e7] flex items-start relative">
           <CardContent className="p-0 w-full">
-            <div className="w-[327.08px] max-[900px]:w-[100%] items-start gap-[13.15px] flex-[0_0_auto] rounded-lg overflow-hidden overflow-x-auto scrollbar-hide flex relative">
+            <div className="min-[1500px]:w-[400px] w-[327.08px] max-[900px]:w-[100%] items-start gap-[13.15px] flex-[0_0_auto] rounded-lg overflow-hidden overflow-x-auto scrollbar-hide flex relative">
               <div className="w-[242.44px] gap-[6.57px] rounded-[9.86px] border-[0.82px] border-solid flex flex-col items-end relative border-[#d1d1d1]">
                 <div className="flex flex-col items-center gap-[13.15px] p-[13.15px] relative self-stretch w-full flex-[0_0_auto] border-b-[0.82px] [border-bottom-style:solid] border-[#d1d1d1]">
                   <div className="flex flex-col items-start gap-[13.15px] relative self-stretch w-full flex-[0_0_auto]">
                     <div className="flex items-center justify-between px-[3.29px] py-0 relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="relative  font-Plus_Jakarta_Sans font-bold text-[#050912] text-[13.1px] tracking-[-0.41px] leading-[15.8px] whitespace-nowrap">
+                      <div className="relative  font-Plus_Jakarta_Sans font-bold text-[#050912] text-[15px] max-[1500px]:text-[13.1px] tracking-[-0.41px] leading-[15.8px] whitespace-nowrap">
                         Goal
                       </div>
 
-                      <div className="relative font-Plus_Jakarta_Sans font-normal text-[#888888] text-[9.9px] text-center tracking-[-0.41px] leading-[11.8px] whitespace-nowrap">
+                      <div className="relative font-Plus_Jakarta_Sans font-normal text-[#888888] text-[11px] max-[1500px]:text-[9.9px] text-center tracking-[-0.41px] leading-[11.8px] whitespace-nowrap">
                         20/40
                       </div>
                     </div>
@@ -201,11 +201,11 @@ export default function FeaturesSection  () {
                       <div className="flex items-center gap-[13.15px] p-[13.15px] relative self-stretch w-full flex-[0_0_auto] border-b-[0.82px] [border-bottom-style:solid] border-[#e7e7e7]">
                         <div className="flex items-center justify-between relative flex-1 grow">
                           <div className="inline-flex flex-col items-start gap-[3.29px] relative flex-[0_0_auto]">
-                            <div className="relative  font-Plus_Jakarta_Sans font-semibold text-black text-[9.9px] tracking-[-0.41px] leading-[11.8px] whitespace-nowrap">
+                            <div className="relative  font-Plus_Jakarta_Sans font-semibold text-black text-[11px] max-[1500px]:text-[9.9px] tracking-[-0.41px] leading-[11.8px] whitespace-nowrap">
                               {task.title}
                             </div>
 
-                            <div className="relative font-Plus_Jakarta_Sans font-normal text-[#b0b0b0] text-[9.9px] tracking-[-0.41px] leading-[11.8px] whitespace-nowrap">
+                            <div className="relative font-Plus_Jakarta_Sans font-normal text-[#b0b0b0] text-[11px] max-[1500px]:text-[9.9px] tracking-[-0.41px] leading-[11.8px] whitespace-nowrap">
                               {task.date}
                             </div>
                           </div>
@@ -214,7 +214,7 @@ export default function FeaturesSection  () {
                             className={`gap-[8.22px] px-[6.57px] py-[3.29px] ${task.priorityBg} rounded-[1182.59px] inline-flex items-center justify-center relative flex-[0_0_auto] border-0 hover:${task.priorityBg}`}
                           >
                             <span
-                              className={`mt-[-0.82px] ${task.priorityText} text-[9.9px] tracking-[-0.41px] leading-[11.8px] relative w-fit [font-family:'Plus_Jakarta_Sans',Helvetica] font-semibold whitespace-nowrap`}
+                              className={`mt-[-0.82px] ${task.priorityText} text-[11px] max-[1500px]:text-[9.9px] tracking-[-0.41px] leading-[11.8px] relative w-fit [font-family:'Plus_Jakarta_Sans',Helvetica] font-semibold whitespace-nowrap`}
                             >
                               {task.priority}
                             </span>
@@ -240,7 +240,7 @@ export default function FeaturesSection  () {
                         House Chore
                       </div>
 
-                      <div className="relative font-Plus_Jakarta_Sans font-normal text-[#888888] text-[9.9px] text-center tracking-[-0.41px] leading-[11.8px] whitespace-nowrap">
+                      <div className="relative font-Plus_Jakarta_Sans font-normal text-[#888888] text-[11px] max-[1500px]:text-[9.9px] text-center tracking-[-0.41px] leading-[11.8px] whitespace-nowrap">
                         20/40
                       </div>
                     </div>
@@ -262,11 +262,11 @@ export default function FeaturesSection  () {
                       <div className="flex items-center gap-[13.15px] p-[13.15px] relative self-stretch w-full flex-[0_0_auto] border-b-[0.82px] [border-bottom-style:solid] border-[#e7e7e7]">
                         <div className="flex items-center justify-between relative flex-1 grow">
                           <div className="inline-flex flex-col items-start gap-[3.29px] relative flex-[0_0_auto]">
-                            <div className="relative w-fit mt-[-0.82px] font-Plus_Jakarta_Sans  font-semibold text-black text-[9.9px] tracking-[-0.41px] leading-[11.8px] whitespace-nowrap">
+                            <div className="relative w-fit mt-[-0.82px] font-Plus_Jakarta_Sans  font-semibold text-black text-[11px] max-[1500px]:text-[9.9px] tracking-[-0.41px] leading-[11.8px] whitespace-nowrap">
                               {task.title}
                             </div>
 
-                            <div className="relative w-fit font-Plus_Jakarta_Sans  font-normal text-[#b0b0b0] text-[9.9px] tracking-[-0.41px] leading-[11.8px] whitespace-nowrap">
+                            <div className="relative w-fit font-Plus_Jakarta_Sans  font-normal text-[#b0b0b0] text-[11px] max-[1500px]:text-[9.9px] tracking-[-0.41px] leading-[11.8px] whitespace-nowrap">
                               {task.date}
                             </div>
                           </div>
@@ -275,7 +275,7 @@ export default function FeaturesSection  () {
                             className={`gap-[8.22px] px-[6.57px] py-[3.29px] ${task.priorityBg} rounded-[1182.59px] inline-flex items-center justify-center relative flex-[0_0_auto] border-0 hover:${task.priorityBg}`}
                           >
                             <span
-                              className={`mt-[-0.82px] ${task.priorityText} text-[9.9px] tracking-[-0.41px] leading-[11.8px] relative w-fit font-Plus_Jakarta_Sans  font-semibold whitespace-nowrap`}
+                              className={`mt-[-0.82px] ${task.priorityText} text-[11px] max-[1500px]:text-[9.9px] tracking-[-0.41px] leading-[11.8px] relative w-fit font-Plus_Jakarta_Sans  font-semibold whitespace-nowrap`}
                             >
                               {task.priority}
                             </span>
@@ -299,7 +299,7 @@ export default function FeaturesSection  () {
                 To-do Lists
               </h3>
 
-              <p className="relative  font-regular text-[#6d6d6d] text-[14px] max-[767px]:text-[12px]  tracking-[-0.2px] leading-[180%] font-Plus_Jakarta_Sans ">
+              <p className="relative  font-regular text-[#6d6d6d] text-lg max-[1500px]:text-base max-[767px]:text-[12px]  tracking-[-0.2px] leading-[180%] font-Plus_Jakarta_Sans ">
                 Organize tasks with categories, priorities, and deadlines. Break
                 down tasks with subtasks and track your progress with ease.
               </p>
@@ -307,7 +307,7 @@ export default function FeaturesSection  () {
           </CardContent>
         </Card>
 
-        <Card className="w-[386px] max-[900px]:w-[100%] gap-6 flex flex-col h-[497px] items-start p-6 relative bg-white rounded-3xl border border-solid border-[#e7e7e7]">
+        <Card className="min-[1500px]:w-[450px] w-[386px] max-[900px]:w-[100%] gap-6 flex flex-col h-[497px] items-start p-6 relative bg-white rounded-3xl border border-solid border-[#e7e7e7]">
           <CardContent className="p-0 w-full h-full flex flex-col ">
             <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
               <h3 className="relative   font-semibold  text-black text-[32px] max-[767px]:text-[24px]  tracking-[-0.2px] leading-[120%] font-Plus_Jakarta_Sans">
@@ -429,7 +429,7 @@ export default function FeaturesSection  () {
           </CardContent>
         </Card>
 
-        <Card className="w-[387px] max-[900px]:w-[100%] gap-8 flex flex-col h-[497px] items-start p-6 relative bg-white rounded-3xl border border-solid border-[#e7e7e7]">
+        <Card className="min-[1500px]:w-[470px] w-[387px] max-[900px]:w-[100%] gap-8 flex flex-col h-[497px] items-start p-6 relative bg-white rounded-3xl border border-solid border-[#e7e7e7]">
           <CardContent className="p-0 w-full h-full flex flex-col gap-8">
             <div className="flex-col h-[307.93px] items-center justify-around gap-[132.02px] self-stretch w-full flex relative">
               <div className="flex-col h-[307.93px] items-center justify-between self-stretch w-full flex relative">
@@ -443,7 +443,7 @@ export default function FeaturesSection  () {
 
                 <div className="flex flex-col items-start gap-[13.63px] relative self-stretch w-full flex-[0_0_auto]">
                   <div className="flex gap-[8.52px] px-[13.63px] py-0 self-stretch w-full flex-[0_0_auto] items-center relative">
-                    <div className="relative w-fit mt-[-0.85px] font-Plus_Jakarta_Sans font-normal text-black text-[11.9px] tracking-[-0.17px] leading-[17.0px] whitespace-nowrap">
+                    <div className="relative w-fit mt-[-0.85px] font-Plus_Jakarta_Sans font-normal text-black text-sm max-[1500px]:text-[11.9px] tracking-[-0.17px] leading-[17.0px] whitespace-nowrap">
                       Your Task
                     </div>
                   </div>
@@ -452,19 +452,19 @@ export default function FeaturesSection  () {
                     {focusTasks.map((task, index) => (
                       <div
                         key={`focus-${index}`}
-                        className="flex w-[245.94px] items-center gap-[13.63px] px-6 py-4 relative flex-[0_0_auto] rounded-[1231.87px] border-[0.85px] border-solid border-[#d1d1d1]"
+                        className="flex min-[1500px]:w-[290px] w-[245.94px] items-center gap-[13.63px] px-6 py-4 relative flex-[0_0_auto] rounded-[1231.87px] border-[0.85px] border-solid border-[#d1d1d1]"
                       >
                         <div className="flex items-center justify-between relative flex-1 grow mt-[-0.15px] mb-[-0.15px] ml-[-3.56px]">
-                          <div className="mt-[-0.85px] font-semibold text-black text-[13.6px] tracking-[-0.43px] leading-[16.4px] relative w-fit font-Plus_Jakarta_Sans whitespace-nowrap">
+                          <div className="mt-[-0.85px] font-semibold text-black text-[15px] max-[1500px]:text-[13.6px] tracking-[-0.43px] leading-[16.4px] relative w-fit font-Plus_Jakarta_Sans whitespace-nowrap">
                             {task.title}
                           </div>
 
                           <div className="inline-flex items-center gap-[0.85px] relative flex-[0_0_auto]">
-                            <div className="relative w-fit mt-[-0.85px] font-Plus_Jakarta_Sans font-normal text-[#d1d1d1] text-[10.2px] tracking-[-0.43px] leading-[12.3px] whitespace-nowrap">
+                            <div className="relative w-fit mt-[-0.85px] font-Plus_Jakarta_Sans font-normal text-[#d1d1d1] text-xs max-[1500px]:text-[10.2px] tracking-[-0.43px] leading-[12.3px] whitespace-nowrap">
                               Deadline is
                             </div>
 
-                            <div className="relative w-fit mt-[-0.85px] font-Plus_Jakarta_Sans font-normal text-[#d1d1d1] text-[10.2px] tracking-[-0.43px] leading-[12.3px] whitespace-nowrap">
+                            <div className="relative w-fit mt-[-0.85px] font-Plus_Jakarta_Sans font-normal text-[#d1d1d1] text-sm max-[1500px]:text-[10.2px] tracking-[-0.43px] leading-[12.3px] whitespace-nowrap">
                               {task.deadline}
                             </div>
                           </div>
@@ -487,7 +487,7 @@ export default function FeaturesSection  () {
                 Focus Mode
               </h3>
 
-              <p className="relative self-stretch font-regular  text-[#6d6d6d] text-[14px] max-[767px]:text-[12px]  tracking-[-0.17px] leading-[180%] font-Plus_Jakarta_Sans">
+              <p className="relative self-stretch font-regular  text-[#6d6d6d] text-lg max-[1500px]:text-base max-[767px]:text-[12px]  tracking-[-0.17px] leading-[180%] font-Plus_Jakarta_Sans">
                 Use the Pomodoro timer to stay focused. Block distractions and
                 track your productive time.
               </p>

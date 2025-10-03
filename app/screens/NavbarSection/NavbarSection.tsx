@@ -63,8 +63,8 @@ export default function NavbarSection() {
             href={item.href}
             className={
               isActiveLink(item.href)
-                ? "font-Plus_Jakarta_Sans font-semibold text-black text-base tracking-[0] leading-[normal]"
-                : "font-Plus_Jakarta_Sans font-regular text-[#6d6d6d] text-base tracking-[0] leading-[normal] hover:text-black transition-colors"
+                ? "font-Plus_Jakarta_Sans font-semibold text-black text-lg max-[1500px]:text-base tracking-[0] leading-[normal]"
+                : "font-Plus_Jakarta_Sans font-regular text-[#6d6d6d] text-lg max-[1500px]:text-base tracking-[0] leading-[normal] hover:text-black transition-colors"
             }
           >
             {item.label}
@@ -73,8 +73,8 @@ export default function NavbarSection() {
       </div>
 
       {/* Desktop Button */}
-      <Button className="cursor-pointer hidden min-[1024px]:block w-[112px] h-[52px] px-6 py-4 bg-black text-white rounded-[100px] border border-solid hover:bg-gray-800">
-        <span className="font-Plus_Jakarta_Sans font-semibold text-base tracking-[0] leading-[100%] text-white">
+      <Button className="cursor-pointer hidden min-[1024px]:block w-[140px] max-[1500px]:w-[112px] h-[52px] px-6 py-4 bg-black text-white rounded-[100px] border border-solid hover:bg-gray-800">
+        <span className="font-Plus_Jakarta_Sans font-semibold text-lg max-[1500px]:text-base tracking-[0] leading-[100%] text-white">
           Sign-up
         </span>
       </Button>
