@@ -19,14 +19,17 @@ export default function FooterSection  ()  {
     {
       src: "/Instagram-1.png",
       alt: "Social media icon",
+      href:'https://www.instagram.com/',
     },
     {
       src: "/YouTube.png",
       alt: "Social media icon",
+      href:'https://www.youtube.com/',
     },
     {
       src: "/GitHub.png",
       alt: "Social media icon",
+      href:'https://github.com/',
     },
   ];
 
@@ -107,11 +110,13 @@ export default function FooterSection  ()  {
                   key={`social-${index}`}
                   className="relative w-12 h-12 max-[500px]:w-10  max-[500px]:h-10 bg-[#f6f6f6] rounded-[100px] cursor-pointer hover:bg-[#e6e6e6] transition-colors"
                 >
-                  <img
+                 <Link href={icon.href}>
+                 <img
                     className="absolute w-6 h-6 top-3 left-3 max-[500px]:w-4  max-[500px]:h-4 cursor-pointer"
                     alt={icon.alt}
                     src={icon.src}
                   />
+                 </Link>
                 </div>
               ))}
             </div>
